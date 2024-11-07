@@ -1,0 +1,162 @@
+body{
+    padding-top: 250px;
+    padding-left: 400px;
+    padding-bottom: 300px;
+    font-family: Roboto, Arial;
+    background-color: rgb(19, 30, 35); ;
+    color: white;
+}
+
+
+.picture-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .picture-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.job{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.person{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+.person:hover{
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
+.person-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.person-name{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.department{
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.rank{
+    margin-top: 0;
+}
+
+.ig-logo{
+    width: 100%; 
+    height: auto;
+    display: inline;
+    width: 30px;
+}
+
+.ig-logo:hover{
+    cursor: pointer;
+    color: p;
+}
+
+.ig-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.ig-link a svg{
+    transition: transform 1s ease-in-out;
+    fill: white;
+}
+
+.ig-link a svg:hover{
+    transform: rotate(360deg);  
+    fill: #DD2A7B;
+}
+.lk-logo{
+    width: 100%; 
+    height: auto;
+    display: inline;
+    width: 30px;
+}
+
+.lk-logo:hover{
+    cursor: pointer;
+}
+
+.lk-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.lk-link a svg{
+    transition: transform 1s ease-in-out;
+    fill: white;
+}
+
+.lk-link a svg:hover{
+    transform: rotate(360deg);  
+    fill: #0077B5;
+}
+.tw-logo{
+    width: 100%; 
+    height: auto;
+    display: inline;
+    width: 30px;
+}
+
+.tw-logo:hover{
+    cursor: pointer;
+}
+
+.tw-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.tw-link a svg{
+    transition: transform 1s ease-in-out;
+    fill: white;
+}
+
+.tw-link a svg:hover{
+    transform: rotate(360deg); 
+    fill: #6441a5;
+}
+.social-links {
+    display: flex;
+    gap: 5px;
+}
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
